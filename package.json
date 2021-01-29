@@ -2,7 +2,7 @@
   "name": "@serverful/backlog",
   "version": "0.0.0",
   "description": "An off-load key/value-based cache",
-  "main": "Backlog.js",
+  "main": "BackLog.js",
   "scripts": {
     "test": "node Test/Main.js",
     "docs": "gendocs Test/DocConf.json"
@@ -16,7 +16,8 @@
     "url": "https://github.com/ServerfulArch/Backlog/issues"
   },
   "dependencies": {
-    "qdatabase": "QSmally/QDB"
+    "qdatabase": "QSmally/QDB",
+    "qulity": "github:QSmally/Qulity"
   },
   "devDependencies": {
     "docgen": "github:QSmally/Docgen"
