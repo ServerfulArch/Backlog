@@ -1,0 +1,10 @@
+
+# Dependencies
+node_modules/
+
+# Testing
+Test/Schedules.qdb
+
+# Miscellaneous
+.DS_Store
+*.zip

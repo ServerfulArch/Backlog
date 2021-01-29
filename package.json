@@ -1,0 +1,24 @@
+{
+  "name": "@serverful/backlog",
+  "version": "0.0.0",
+  "description": "An off-load key/value-based cache",
+  "main": "Backlog.js",
+  "scripts": {
+    "test": "node Test/Main.js",
+    "docs": "gendocs Test/DocConf.json"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/ServerfulArch/Backlog#readme",
+  "repository": "github:ServerfulArch/Backlog",
+  "author": "QSmally",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ServerfulArch/Backlog/issues"
+  },
+  "dependencies": {
+    "qdatabase": "QSmally/QDB"
+  },
+  "devDependencies": {
+    "docgen": "github:QSmally/Docgen"
+  }
+}
