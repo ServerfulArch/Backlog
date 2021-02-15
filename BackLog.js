@@ -3,14 +3,15 @@ const QDB = require("qdatabase");
 const Qulity = require("qulity");
 
 const Defaults = new Qulity.Collection({
-    "Persistent Path": "BackLog/Persistent.qdb"
+    "Persistent Path": "BackLog/Persistent.qdb",
+    "Connection": {}
 });
 
 class BackLog {
 
     /**
      * An off-load key/value-based cache.
-     * @param {String} Identifier 
+     * @param {String} Identifier A storage identifier for this instance.
      */
     constructor (Identifier) {
 
@@ -75,7 +76,7 @@ class BackLog {
     QDBConnection () {
         const Path = this.Settings.get("Persistent Path");
         return new QDB.Connection(Path, {
-            ...this.Settings.get("Connection Options") || {},
+            ...this.Settings.get("Connection") || {},
             Table: this.Identifier
         });
     }
@@ -112,8 +113,8 @@ class BackLog {
 
     /**
      * Modifies the settings of this BackLog instance.
-     * @param {Object|*} Key 
-     * @param {*} Val 
+     * @param {Object|*} Key Either a list of key/values or just a key.
+     * @param {*} Val If a singular key was provided, a value for this option.
      * @returns {Collection}
      */
     Config (Key, Val) {
@@ -129,8 +130,8 @@ class BackLog {
 
     /**
      * Modifies the default settings of BackLog.
-     * @param {Object|*} Key 
-     * @param {*} Val 
+     * @param {Object|*} Key Either a list of key/values or just a key.
+     * @param {*} Val If a singular key was provided, a value for this default option.
      * @returns {Collection}
      * @static
      */
