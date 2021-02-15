@@ -16,8 +16,8 @@
     "url": "https://github.com/ServerfulArch/Backlog/issues"
   },
   "dependencies": {
-    "qdatabase": "QSmally/QDB",
-    "qulity": "github:QSmally/Qulity"
+    "qdatabase": "github:QSmally/QDB",
+    "qulity": "^2.1.0"
   },
   "devDependencies": {
     "docgen": "github:QSmally/Docgen"
