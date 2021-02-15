@@ -1,0 +1,96 @@
+{
+    "BackLog": [
+        {
+            "Value": "Identifier",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 19,
+            "Description": "Identifier of this BackLog map.",
+            "Type": "{String}"
+        },
+        {
+            "Value": "Cache",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 30,
+            "Description": "Active cache which will get pushed to persistent disk on exit.",
+            "Type": "{Map}"
+        },
+        {
+            "Value": "Ready",
+            "Flags": [
+                "Variable",
+                "ReadOnly"
+            ],
+            "Line": 41,
+            "Description": "A defer Promise that resolves once this BackLog is done loading.",
+            "Type": "{Promise}"
+        },
+        {
+            "Value": "Settings",
+            "Flags": [
+                "Variable",
+                "Private"
+            ],
+            "Line": 57,
+            "Description": "Settings of this BackLog.",
+            "Type": "{Map}"
+        },
+        {
+            "Value": "QDBConnection",
+            "Flags": [
+                "Private"
+            ],
+            "Line": 70,
+            "Description": "Returns a new QDB Connection.",
+            "Returns": "{Connection}"
+        },
+        {
+            "Value": "PullPersistent",
+            "Flags": [
+                "Private"
+            ],
+            "Line": 83,
+            "Description": "Pulls the items from persistent memory into this BackLog.",
+            "Returns": "{BackLog}"
+        },
+        {
+            "Value": "PushPersistent",
+            "Flags": [
+                "Private"
+            ],
+            "Line": 97,
+            "Description": "Moves the current items from this BackLog instance into persistent memory, provided by the identifier of the BackLog.",
+            "Returns": "{BackLog}"
+        },
+        {
+            "Value": "Config",
+            "Flags": [],
+            "Line": 113,
+            "Description": "Modifies the settings of this BackLog instance.",
+            "Params": [
+                "{Object|*} Key",
+                "{*} Val"
+            ],
+            "Returns": "{Collection}"
+        },
+        {
+            "Value": "Default",
+            "Flags": [
+                null,
+                "Static"
+            ],
+            "Line": 130,
+            "Description": "Modifies the default settings of BackLog.",
+            "Params": [
+                "{Object|*} Key",
+                "{*} Val"
+            ],
+            "Returns": "{Collection}"
+        }
+    ]
+}
