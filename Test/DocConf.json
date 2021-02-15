@@ -1,0 +1,15 @@
+{
+    "Source": ".",
+    "Out":    "Documentation/",
+    "Index":  true,
+
+    "Additional": {
+        "BackLog": "foo"
+    },
+
+    "Repository": "https://github.com/ServerfulArch/Backlog/blob/master/",
+
+    "Keys": ["BackLog"],
+    "Typedefs": [],
+    "Overview": {}
+}
